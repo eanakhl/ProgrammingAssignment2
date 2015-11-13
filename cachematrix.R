@@ -1,5 +1,5 @@
 ## Caching the Inverse of a Matrix
-## his function computes the inverse of the special "matrix".
+## This function computes the inverse of the special "matrix".
 ## If the inverse has already been calculated (and the matrix has not changed),
 ## then cacheSolve should retrieve the inverse from the cache.
 
