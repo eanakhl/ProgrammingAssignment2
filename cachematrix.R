@@ -1,5 +1,5 @@
 ## Caching the Inverse of a Matrix
-## This function computes the inverse of the special "matrix".
+## his function computes the inverse of the special "matrix".
 ## If the inverse has already been calculated (and the matrix has not changed),
 ## then cacheSolve should retrieve the inverse from the cache.
 
@@ -25,14 +25,14 @@ makeCacheMatrix <- function(x = matrix()) {
 ## If the inverse has already been calculated (and the matrix has not changed), 
 ## then cacheSolve should retrieve the inverse from the cache.
 
-cacheSolve <- function(x) {
+cacheSolve <- function(x, ...) {
         m <- x$getInverse()
         if(!is.null(m)) {
                 message("getting cached data")
                 return(m)
         }
         matr <- x$get()
-        m <- solve(matr)
+        m <- solve(matr, ...)
         x$setInverse(m)
         m
 }
